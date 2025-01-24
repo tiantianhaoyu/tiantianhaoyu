@@ -5,123 +5,131 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>天天好鱼</title>
     <link href="css/bootstrap.min.css" rel="stylesheet">
-    <style>
-        body {
-            background-color: rgb(191, 234, 249);
-            font-family: 'Roboto', sans-serif;
-        }
-        h1 {
-            font-family: 'Poppins', sans-serif;
-            font-weight: bold;
-            font-size: medium;
-        }
-        h4{
-            text-align: center;
-            font-family: 'Poppins', sans-serif;
-            font-weight: bold;
-            font-size: medium;
-        }
-        .card {
-            display: flex;
-            flex-direction: row;
-            align-items: center;
-            border-radius: 15px;
-            overflow: hidden;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-            background-color: rgb(147, 230, 255);
-        }
-        .card-img-left {
-            width: 150px;
-            height: 150px;
-            object-fit: cover;
-            margin-right: 15px;
-            
-        }
-        .card-body {
-            flex: 1;
-        }
-        .card-title {
-            font-family: 'Poppins', sans-serif;
-            font-size: 1.25rem;
-        }
-        .card-text {
-            font-family: 'Roboto', sans-serif;
-            font-size: 1rem;
-        }
-        .footer {
-            background-color: rgb(191, 234, 249);
-            padding: 20px;
-            border-radius: 15px;
-            margin-top: 20px;
-            text-align: left;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-        }
-        .footer p {
-            margin: 5px 0;
-            font-family: 'Roboto', sans-serif;
-            font-size: 1rem;
-        }
-    </style>
+    <link href="css/tthy.css" rel="stylesheet">
+    <script src="script/tthy.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 </head>
 <body>
-    <div class="container mt-4">
-        <!-- Company Name -->
-        <div class="text-center mb-4">
-            <div class="text-center mb-4 d-flex align-items-center justify-content-center">
-                <img src="images/logo001.png" alt="Company Logo" style="width: 100px; height: 100px; margin-right: 10px;">
-                <h1>Fresh Fish Everyday</h2>
-            </div>
+    <div class="row">
+        <div class="text-center mb-4 d-flex align-items-center justify-content-center">
+            <img src="images/logo001.png" alt="Company Logo" style="width: 250px; height: 250px; margin-right: 10px;">
         </div>
+      </div>
     </div>
-   
-    <div class="container mt-4">
-        <div class="row">
-            <!-- Fish 12 -->
-            <div class="col-12 mb-4">
-                <div class="card">
-                    <img src="images/Fish1.jpg" class="card-img-left" alt="Fish 1">
-                    <div class="card-body">
-                        <h5 class="card-title">Ikan Kembung</h5>
-                        <p class="card-text">甘望鱼</p>
-                        <p class="card-text">Harga(价钱): RM 16.99/kg</p>
-                    </div>
-                </div>
-            </div>
-            <!-- Fish 2  -->
-            <div class="col-12 mb-4">
-                <div class="card">
-                    <img src="images/Fish2.jpg" class="card-img-left" alt="Fish 2">
-                    <div class="card-body">
-                        <h5 class="card-title">Ikan Bawal Putih</h5>
-                        <p class="card-text">白昌鱼</p>
-                        <p class="card-text">Harga(价钱): RM 2.99/kg</p>
-                    </div>
-                </div>
-            </div>
-            <!-- Fish 3 -->
-            <div class="col-12 mb-4">
-                <div class="card">
-                    <img src="images/Fish3.jpg" class="card-img-left" alt="Fish 3">
-                    <div class="card-body">
-                        <h5 class="card-title">Undang Besar</h5>
-                        <p class="card-text">大虾</p>
-                        <p class="card-text">Harga(价钱): RM18.99/kg</p>
-                    </div>
-                </div>
-            </div>
+   <div class="row">
+    <ul class="nav nav-pills mb-3" id="pills-tab" role="tablist">
+        <li class="nav-item" role="presentation">
+          <button class="nav-link active" id="pills-home-tab" 
+          data-bs-toggle="pill" data-bs-target="#pills-home" 
+          type="button" role="tab" aria-controls="pills-home" 
+          aria-selected="true">简介</button>
+        </li>
+        <li class="nav-item" role="presentation">
+          <button class="nav-link" id="pills-profile-tab" 
+          data-bs-toggle="pill" data-bs-target="#pills-profile" 
+          type="button" role="tab" aria-controls="pills-profile" 
+          aria-selected="false">鱼类🐟</button>
+        </li>
+        <li class="nav-item" role="presentation">
+          <button class="nav-link" id="pills-contact-tab" 
+          data-bs-toggle="pill" data-bs-target="#pills-contact" 
+          type="button" role="tab" aria-controls="pills-contact" 
+          aria-selected="false">虾类🦐</button>
+        </li>
+      </ul>
+      <div class="tab-content" id="pills-tabContent">
+        <div class="tab-pane fade show active" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab">
+            天天好鱼🐟——最新鲜海鲜就在这里！<br><br>
+            【自家渔船现抓现卖，现场处理】🔥<br>
+            吃海鲜，我们给你最重要的三点：<br>
+            1️⃣ 新鲜<br>
+            2️⃣ 品质<br>
+            3️⃣ 营养<br><br>
+
+            为什么选择天天好鱼？<br>
+            🚢 从海上直送到你家<br>
+            绝无中间商，100%第一手海鲜！没有腥味，口感饱满爽滑，自然鲜甜！<br><br>
+
+            💯 无增重剂、无漂白、无防腐剂<br>
+            保持高达95%的上岸新鲜品质，同时保留丰富营养！<br><br>
+
+            💰 “有机”品质，价格更实惠<br>
+            保证你收到的是最新鲜、最鲜甜的海鲜！<br><br>
+
+            我们能做到，其他人做不到！<br>
+            ✅ 自家渔船直供——掌控每一份海鲜的品质！<br>
+            ✅ 超50种海产，满足你的选择！<br>
+            ✅ 贴心处理——清内脏、切片、起肉，一切按你的要求完成！<br>
+            ✅ 真空包装——独立分装，方便又保鲜！<br>
+            ✅ 冷冻车速递——最快时间送到你家！<br><br>
+
+            联系我们：<br>
+            📞 016-414 2381<br>
+            📞 016-410 2243<br>
+            📞 016-411 1717<br>
+            📞 016-225 5288<br><br>
+
+            天天好鱼，给你最新鲜的选择！<br>
         </div>
+        <div class="tab-pane fade" id="pills-profile" 
+        role="tabpanel" aria-labelledby="pills-profile-tab">
+        <div class="container">
+            <div class="row">
+              <div class="col-sm-3">
+                <img src="images/Fish/Fish1.JPG" class="img-fluid" alt="Image 1">
+              </div>
+              <div class="col-sm-3">
+                <img src="images/Fish/Fish2.jpg" class="img-fluid" alt="Image 2">
+              </div>
+              <div class="col-sm-3">
+                <img src="images/Fish/Fish3.jpg" class="img-fluid" alt="Image 3">
+              </div>
+              <div class="col-sm-3">
+                <img src="images/Fish/Fish4.jpg" class="img-fluid" alt="Image 4">
+              </div>
+            </div>
+            <div class="row">
+                <div class="col-sm-3">
+                  <img src="images/Fish/Fish5.JPG" class="img-fluid" alt="Image 5">
+                </div>
+                <div class="col-sm-3">
+                  <img src="images/Fish/Fish6.jpg" class="img-fluid" alt="Image 6">
+                </div>
+                <div class="col-sm-3">
+                  <img src="images/Fish/Fish7.jpg" class="img-fluid" alt="Image 7">
+                </div>
+                <div class="col-sm-3">
+                  <img src="images/Fish/Fish8.jpg" class="img-fluid" alt="Image 8">
+                </div>
+              </div>
+          </div>
+        </div>
+        <div class="tab-pane fade" id="pills-contact" 
+        role="tabpanel" aria-labelledby="pills-contact-tab">
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-3">
+                    <img src="images/Prawn/Prawn1.jpg" class="img-fluid" alt="Image 1">
+                    </div>
+                    <div class="col-sm-3">
+                    <img src="images/Prawn/Prawn2.jpg" class="img-fluid" alt="Image 2">
+                    </div>
+                    <div class="col-sm-3">
+                    <img src="images/Prawn/Prawn3.jpg" class="img-fluid" alt="Image 3">
+                    </div>
+                    <div class="col-sm-3">
+                    <img src="images/Prawn/Prawn4.jpg" class="img-fluid" alt="Image 4">
+                    </div>
+                </div>
+            </div>
+      </div>
+   </div>
     </div>
+    <br>
         <h4>自家渔船</h4>
         <h4> 天天出海，天天回</h4>
         <h4>极速冷冻真空包装</h4>
-        <!-- Footer with Address and Telephone -->
-        <div class="footer">
-            <p>Tel 1: 016-414 2281</p>
-            <p>Tel 2: 016-410 2243</p>
-            <p>Tel 3: 016-411 1717</p>
-            <p>Tel 4: 016-225 5288<p>
-            <p>Address: Lot 19, Jalan Tiga, Bagan Sungai Tiang, 36200 Selekoh,Perak.</p>
-        </div>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+        <br>
+        <p>地址：Lot 19, Jalan Tiga, Bagan Sungai Tiang, 36200 Selekoh,Perak.</p>   
 </body>
 </html>
