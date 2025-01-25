@@ -101,3 +101,22 @@ h4{
     from {opacity: 0;}
     to {opacity: 1;}
   }
+
+  .grid-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 5px;
+    width: 90%;
+    max-width: 600px;
+  }
+
+  .grid-item {
+    aspect-ratio: 1 / 1; /* Ensures square images */
+    overflow: hidden;
+  }
+
+  .grid-item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Crops and centers images */
+  }
